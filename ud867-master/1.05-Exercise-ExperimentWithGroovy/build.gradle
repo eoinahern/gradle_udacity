@@ -44,10 +44,10 @@ task closures << {
     // HINT: http://www.groovy-lang.org/closures.html
 
 
-     def gay = { x,y -> x + y} 
+     def boo = { x,y -> x + y} 
 
 
-     println gay(1,2)
+     println boo(1,2)
     
     // TODO: Call your closure with arguments 17 and 25, and print the result
     // Beware that something like `println addTwo 17, 25` is ambiguous
@@ -57,7 +57,7 @@ task lists << {
     // TODO: Declare a list containing 5 of your favorite candies
     // HINT: Try searching for "groovy list literal"
 
-    def list = ["bitch", "cunt", "balls", "fag"]
+    def list = ["bitch", "cunt", "balls", "fuck"]
     // TODO: Create a new list of your candies in all caps
 
 
