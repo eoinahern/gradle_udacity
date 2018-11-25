@@ -17,9 +17,10 @@ Exercises:
 5. Execute the "hello" task with the appropriate command line options such
    that the text "Hello World" is no longer written to the console output.
 6. Uncomment and run the "derpy" task below, then use "--stacktrace" to find
-   the error.
+   the error. 
 7. CHALLENGE! Log "Catch me if you can" at DEBUG level, then use grep (or
     findstr on Windows) to find that message in the logs.
+    ????
 
 */
 
@@ -28,12 +29,14 @@ task hello(type: HelloTask)
 class HelloTask extends DefaultTask {
     @TaskAction
     void doAction() {
+        logger.info "hello"
         println 'Hello World'
+        logger.info "bye now"
     }
 }
 
-/*
+
 task derpy << {
     primp "Herp de derp"
 }
-*/
+
