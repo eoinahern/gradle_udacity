@@ -2,7 +2,7 @@ package com.udacity.gradle.buildtypes;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,8 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,9 +18,7 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             PlaceholderFragment fragment = new PlaceholderFragment();
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, fragment)
-                    .commit();
+            getSupportFragmentManager().beginTransaction().add(R.id.container, fragment).commit();
         }
     }
 
